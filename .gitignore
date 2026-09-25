@@ -1,1 +1,18 @@
 .DS_Store
+
+# Local and editor files
+.vscode/
+.idea/
+node_modules/
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Private documents
+CV_*.pdf
