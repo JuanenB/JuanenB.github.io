@@ -3,25 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page not found — Juan Enrique</title>
+  <title>404 - Juan Enrique Belando</title>
+  <meta name="description" content="The requested page could not be found. Return to Juan Enrique Belando's portfolio.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <div class="bg-decoration" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-  </div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name" aria-label="Return to Juan Enrique Belando's portfolio">JE<span class="nav-dot">.</span></a>
+      <a href="index.html#contact" class="not-found-nav-link">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
 
-  <main class="not-found">
-    <p class="hero-eyebrow">404</p>
-    <h1>This page took a wrong turn.</h1>
-    <p class="hero-summary">The page you're looking for doesn't exist or may have moved.</p>
-    <a href="index.html" class="btn btn-primary">Back to home</a>
+  <main class="not-found" id="main-content">
+    <div class="not-found-code" aria-hidden="true">
+      <span>HTTP</span>
+      <strong>404</strong>
+      <i></i>
+    </div>
+    <div class="not-found-copy">
+      <p class="not-found-label">Signal not found</p>
+      <h1>This page is not in the dataset.</h1>
+      <p class="not-found-summary">The address may be out of date, or the page may have moved. Return to the portfolio and continue exploring the work.</p>
+      <div class="not-found-actions">
+        <a href="index.html" class="btn btn-primary">Return to portfolio</a>
+        <a href="index.html#experience" class="btn btn-ghost">View experience</a>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
